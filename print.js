@@ -40,21 +40,38 @@ const print = function(){
 	const info = document.querySelectorAll('.info');
 	info.forEach(f=>f.remove());
 
+	const submitbtns = document.querySelectorAll('.submitbtns a');
+	submitbtns.forEach(a=>a.remove());
+
+
+	const divs = document.querySelectorAll('div');
+	divs.forEach(d=>d.style.display = 'none');
+
+	const navs = document.querySelectorAll('nav');
+	navs.forEach(n=>n.style.display = 'none');
+
+	const main = document.querySelector('#region-main-box');
+	main.style.display = 'block';
+	document.querySelector('#page-wrapper').style.display = 'block';
+	document.querySelector('#page').style.display = 'block';
+	document.querySelector('#page').className = '';
+	document.body.className = '';
+	document.querySelector('#page-content').style.display = 'block';
+
+	const mainDivs = main.querySelectorAll('div');
+	mainDivs.forEach(d=>d.style.display = 'block');
+
 	document.querySelector('.othernav').remove();
+	
 	document.querySelector('.qn_buttons').remove(); 
 	document.querySelector('.footer').remove();
 
+
+	document.querySelector('.quizreviewsummary').remove();
+	document.querySelector('.activity-navigation').remove(); 
+	
 	let material = '';
 	
-	let content = document.querySelectorAll('.content');
-		content.forEach(c=>{
-		material += c.innerHTML;
-	});
-
-	document.body.className = '';
-	document.body.innerHTML = '';
-	document.body.innerHTML = material;
-
 	formulation = document.querySelectorAll('.formulation');
 	formulation.forEach(f=>{
 		f.style.borderBottom = '2px dashed #888';
