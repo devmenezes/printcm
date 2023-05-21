@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Print Simulados do Colégio Militar",
+  "version": "1.0",
+
+  "description": "Retira as respostas dos exercícios para você resolver",
+
+  "icons": {
+    "48": "printer.svg"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/mod/quiz/*attempt*"],
+      "js": ["print.js"]
+    }
+  ]
+
+}
