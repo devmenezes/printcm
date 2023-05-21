@@ -2,9 +2,9 @@
 
   "manifest_version": 2,
   "name": "Print Simulados do Colégio Militar",
-  "version": "1.0",
+  "version": "1.2",
 
-  "description": "Retira as respostas dos exercícios para você resolver",
+  "description": "Plugin para Firefox que permite imprimir atividades do AVA mesmo que já tenham sido esgotadas as tentativas.",
 
   "icons": {
     "48": "printer.svg"
