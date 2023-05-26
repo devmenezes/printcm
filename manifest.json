@@ -1,10 +1,10 @@
 {
 
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "Print Simulados do Colégio Militar",
-  "version": "1.2",
+  "version": "1.3",
 
-  "description": "Plugin para Firefox que permite imprimir atividades do AVA mesmo que já tenham sido esgotadas as tentativas.",
+  "description": "Este plugin cria um botão de impressão para imprimir sem comentários, respostas e opções marcadas os exercícios disponibilizados no Moodle (geralmente por Colégios Militares)",
 
   "icons": {
     "48": "printer.svg"
